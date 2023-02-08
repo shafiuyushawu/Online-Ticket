@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-#check:checked~ul {
+/* #check:checked~ul {
     left: 0;
-}
+} */
 
 .bar {
     display: block;
@@ -36,6 +36,11 @@ body {
     background-size: 100%;
 }
 
+.flex__container {
+    display: flex;
+    gap: 2;
+}
+
 header {
     position: fixed;
     z-index: 1;
@@ -46,8 +51,8 @@ header {
   left: 0;
   background-color: white;
 }
-main {
-     margin: 0 7%;
+#home {
+     /* margin: 0 7%; */
 }
 
 .main__section {
@@ -59,10 +64,6 @@ main {
     font-size: 14px;
     padding: 10px;
     margin-top: 10px;
-}
-
-#home {
-   
 }
 
 #venue {
@@ -81,7 +82,7 @@ main {
      margin: 100px 0 0 0;
     }
 
-    main {
+    #home {
      margin: 0 15%;
     }
 
