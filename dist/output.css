@@ -1752,9 +1752,9 @@ html {
   border-color: transparent;
   border-color: hsl(var(--n) / var(--tw-border-opacity));
   text-align: center;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: var(--rounded-btn, 0.5rem);
@@ -1768,7 +1768,8 @@ html {
   font-weight: 600;
   text-transform: uppercase;
   text-transform: var(--btn-text-case, uppercase);
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   border-width: var(--border-btn, 1px);
   animation: button-pop var(--animation-btn, 0.25s) ease-out;
   --tw-border-opacity: 1;
@@ -1887,9 +1888,9 @@ html {
 
 .input {
   flex-shrink: 1;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 3rem;
@@ -1919,7 +1920,8 @@ html {
 
 .link {
   cursor: pointer;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .navbar {
@@ -2600,6 +2602,10 @@ html {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .top-20 {
   top: 5rem;
 }
@@ -2637,8 +2643,20 @@ html {
   margin-right: 2.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .block {
@@ -2653,11 +2671,15 @@ html {
   display: none;
 }
 
-.h-20 {
-  height: 5rem;
+.h-full {
+  height: 100%;
 }
 
 .h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-screen {
   height: 100vh;
 }
 
@@ -2671,6 +2693,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .w-\[100\%\] {
@@ -2687,6 +2713,10 @@ html {
 
 .list-none {
   list-style-type: none;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .items-center {
@@ -2724,14 +2754,17 @@ html {
   border-radius: 0.25rem;
 }
 
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+.border-4 {
+  border-width: 4px;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.border-2 {
+  border-width: 2px;
+}
+
+.border-\[\#d3d3d3\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(211 211 211 / var(--tw-border-opacity));
 }
 
 .bg-\[\#272a31\] {
@@ -2739,14 +2772,24 @@ html {
   background-color: rgb(39 42 49 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#d3d3d3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(211 211 211 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f2f2f2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .py-3 {
@@ -2777,6 +2820,10 @@ html {
   text-align: center;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .font-\[Lato\] {
   font-family: Lato;
 }
@@ -2791,9 +2838,32 @@ html {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .font-bold {
@@ -2808,9 +2878,19 @@ html {
   line-height: 80px;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-\[\#ec5242\] {
   --tw-text-opacity: 1;
   color: rgb(236 82 66 / var(--tw-text-opacity));
+}
+
+.text-\[\#272a31\] {
+  --tw-text-opacity: 1;
+  color: rgb(39 42 49 / var(--tw-text-opacity));
 }
 
 .text-\[\#d3d3d3\] {
@@ -2840,10 +2920,6 @@ html {
   transition-duration: 150ms;
 }
 
-.transition-none {
-  transition-property: none;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -2860,14 +2936,14 @@ ul li a {
   transition-duration: 300ms;
 }
 
+.hover\:border-\[\#ec5242\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(236 82 66 / var(--tw-border-opacity));
+}
+
 .hover\:bg-\[\#ec5242\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(236 82 66 / var(--tw-bg-opacity));
-}
-
-.hover\:hover\:text-\[\#ec5242\]:hover:hover {
-  --tw-text-opacity: 1;
-  color: rgb(236 82 66 / var(--tw-text-opacity));
 }
 
 .hover\:text-\[\#ec5242\]:hover {
@@ -2877,10 +2953,6 @@ ul li a {
 
 .hover\:outline-none:hover {
   outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.hover\:outline-offset-2:hover {
   outline-offset: 2px;
 }
 
@@ -2923,8 +2995,16 @@ ul li a {
     width: fit-content;
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:pl-24 {
@@ -2936,17 +3016,21 @@ ul li a {
     line-height: 2.25rem;
   }
 
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
   .md\:leading-\[80px\] {
     line-height: 80px;
   }
 
   .md\:transition-none {
     transition-property: none;
-  }
-
-  .md\:transition-all {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
   }
 }

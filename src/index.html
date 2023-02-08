@@ -1,48 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="./index.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
 
 <body class="font-[Lato]">
-
-    <nav class="shadow-xl bg-dark h-15 w-full fixed trainsition-500 ">
+  <header class="w-full ">
+    <div class="w-screen h-full">
+      <div class="bg-[#272a31] w-full text-white float-right hidden md:block ">
+        <ul class="container md:flex md:flex-row md:justify-end">
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i> </a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <nav class="w-full shadow-xl h-15 trainsition-500">
         <input type="checkbox" id="check" hidden>
         <label for="check" class="float-right flex justify-center text-3xl leading-[80px] mr-5 md:hidden">
-            <!-- <i class="fas fa-bars"></i> -->
-            <div class="hamburger ">
+          <i class="fas fa-bars"></i>
+          <div class="hamburger ">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
         </label>
-
-        <span class="leading-[80px] pl-12 md:pl-24 md:text-3xl text-3xl md:leading-[80px]">IBNSCO</span>
+        <span class="leading-[80px] pl-12 md:pl-24 md:text-3xl text-3xl md:leading-[80px]"><i
+            class="fa-solid fa-microphone-lines text-[#ec5242] text-4xl mr-3"></i>IBNSCO</span>
         <ul
-            class="  float-right mr-10  md:flex leading-[80px] space-x-4 rounded 
+          class=" container float-right mr-10  md:flex leading-[80px] space-x-4 rounded 
                     fixed md:relative h-[100vh] md:h-0 w-[100%] md:w-fit top-20 md:top-0 left-[-100%] 
-                    md:left-0 transition-all duration-300 md:transition-none duration-0 text-center bg-[#d3d3d3]">
-            <li><a href="#" class="hover:text-[#ec5242]">About</a></li>
-            <li><a href="#" class="hover:text-[#ec5242]">Program</a></li>
-            <li><a href="#" class="hover:text-[#ec5242]">Stream Live</a></li>
-            <li><a href="#" class="hover:text-[#ec5242]">Gallery</a></li>
-            <li><a href="#" class="btn btn-outline hover:bg-[#ec5242] hover:outline-none text-[#ec5242]">Buy ticket</a></li>
+                    md:left-0 transition-all duration-300 md:transition-none duration-0 text-center bg-[#d3d3d3] md:text-bold">
+          <li><a href="#" class="hover:text-[#ec5242]">About</a></li>
+          <li><a href="#" class="hover:text-[#ec5242]">Program</a></li>
+          <li><a href="#" class="hover:text-[#ec5242]">Stream Live</a></li>
+          <li><a href="#" class="hover:text-[#ec5242]">Gallery</a></li>
+          <li><a href="#"
+              class="btn btn-outline hover:bg-[#ec5242] hover:outline-none text-[#ec5242]  border-4 hover:border-[#ec5242]">Buy
+              ticket</a></li>
         </ul>
-    </nav>
-    </header>
-    <main>
+      </nav>
+    </div>
+  </header>
+  <main class="">
+    <section class="h-screen ">
+      <div class="main__section text-[#ec5242] md:flex flex-row  flex-2">
+        <div class="text-start ">
+          <h1 class="items-center mt-5 text-xl font-light md:text-5xl">Black Sherif !!!</h1>
+          <span class="text-3xl font-extrabold md:text-7xl">The Genesis Edition<br> Global Concert <br> 2023 </span>
+        </div>
+        <div class="">
+          <img src="./images/mic-gray.png" alt="no internet" width="100%" class="top-0 items-center hidden md:block">
+        </div>
+      </div>
+      <div class="bg-[#f2f2f2] border-2 border-[#d3d3d3] description text-[#272a31] text-xsm">
+        <p>
+          Leading up to the main concert in December 2023, we bring you “ The Genesis ” a thrilling experience with
+          Ghana’s favorite poster boy Black Sherif.
+        </p>
+      </div>
+      <div id="venue">
+        <span id="date" class="text-2xl font-extrabold font-\[Lato\]">2023.03.17 (FRI) ~ 19(SUN)</span>
+        <p id="location" class="text-xl">@Accra Internation Conference</p>
+      </div>
+    </section>
+    <section>
 
-    </main>
-    <footer>
-    </footer>
+    </section>
+
+  </main>
+  <footer>
+  </footer>
 </body>
 
 </html>

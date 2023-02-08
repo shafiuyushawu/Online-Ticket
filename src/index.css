@@ -25,3 +25,72 @@
 .hamburger .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 } */
+
+
+/* main  */
+
+body {
+     background-image: url("./images/mobile\ background.png");
+     background-repeat: no-repeat;
+     background-position: fixed;
+    background-size: 100%;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+main {
+     margin: 0 7%;
+}
+
+.main__section {
+    padding: 100px 0 0 0;
+}
+
+.description {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#home {
+   
+}
+
+#venue {
+    margin: 10px 0 10px 0;
+}
+
+#location {
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+     background-image: url("./images/home-bg-desk.png");
+     background-repeat: no-repeat;
+     background-position: fixed;
+     margin: 100px 0 0 0;
+    }
+
+    main {
+     margin: 0 15%;
+    }
+
+    .main__section {
+        padding: 100px 0 0 0;
+    }
+
+    .description {
+        width: 50%;
+        margin-top: 0;
+    }
+}
