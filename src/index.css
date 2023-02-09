@@ -1,33 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/* #check:checked~ul {
-    left: 0;
-} */
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: rgb(78, 78, 78);
-}
-/* 
-.hamburger .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-} */
-
-
-/* main  */
 
 body {
      background-image: url("./images/mobile\ background.png");
@@ -36,28 +8,6 @@ body {
     background-size: 100%;
 }
 
-.flex__container {
-    display: flex;
-    gap: 2;
-}
-
-header {
-    position: fixed;
-    z-index: 1;
-    overflow: hidden;
-    position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: white;
-}
-#home {
-     /* margin: 0 7%; */
-}
-
-.main__section {
-    padding: 100px 0 0 0;
-}
 
 .description {
     width: 90%;
@@ -65,6 +15,8 @@ header {
     padding: 10px;
     margin-top: 10px;
 }
+
+:indeterminate
 
 #venue {
     margin: 10px 0 10px 0;
@@ -74,24 +26,34 @@ header {
     margin-top: 5px;
 }
 
+
 @media screen and (min-width: 768px) {
     body {
      background-image: url("./images/home-bg-desk.png");
      background-repeat: no-repeat;
      background-position: fixed;
-     margin: 100px 0 0 0;
+     /* margin: 100px 0 0 0; */
     }
 
     #home {
      margin: 0 15%;
     }
 
-    .main__section {
+    /* .main__section {
         padding: 100px 0 0 0;
-    }
+    } */
 
     .description {
         width: 50%;
         margin-top: 0;
+    }
+    
+    #feature__container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #program__section {
+        display: flex;
+        flex-direction: row;
     }
 }

@@ -36,24 +36,24 @@ const dataArr = [
   },
 ];
 
-const featureSection = document.querySelector("body main #feature__section");
-
-const featureContainer = document.createElement("div");
-featureContainer.className = "container grid grid-cols-2";
-
-featureSection.appendChild(featureContainer);
+const featureSection = document.querySelector("body main #feature__section #feature__container");
+const featureTittle = document.querySelector("body main #feature__section #feature__tittle");
 
 const titleDiv = document.createElement("div");
-titleDiv.className = "flex flex-col gap-2 justify-center items-center ";
+titleDiv.className = "flex flex-col items-center justify-center gap-2 ";
 const tittle = document.createElement("h2");
 tittle.innerHTML = "Fearture Artise";
 tittle.className = "text-xl text-center";
 const tittleBar = document.createElement("div");
 tittleBar.className = "h-1 w-10 bg-[#ec5242]";
 
-featureContainer.appendChild(titleDiv);
+featureTittle.appendChild(titleDiv);
 titleDiv.appendChild(tittle);
 titleDiv.appendChild(tittleBar);
+
+
+
+
 
 for (let data of dataArr) {
   const mainDiv = document.createElement("div");
