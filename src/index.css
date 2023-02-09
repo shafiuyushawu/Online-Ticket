@@ -1,68 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-
-
-
 #home {
-    margin: 0 8%;
+  margin: 0 8%;
 }
+
 #home1 {
-    margin: 0 8%;
+  margin: 0 8%;
 }
 
 #venue {
-    margin: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 #location {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 #aboutImgTxt1 {
-    position: relative;
-    top: -130px;
+  position: relative;
+  top: -130px;
 }
 
 #image1 {
-    /* background-image: url('./images/blacko.jpg'); */
+  /* background-image: url('./images/blacko.jpg'); */
 }
 
 #sponsors {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-
 @media screen and (min-width: 768px) {
+  #home {
+    margin: 0 15%;
+  }
 
-    #home {
-     margin: 0 15%;
-    }
+  .description {
+    width: 50%;
+    margin-top: 0;
+  }
 
-    .description {
-        width: 50%;
-        margin-top: 0;
-    }
-    
-    #feature__container {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    #program__section {
-        display: flex;
-        flex-direction: row;
-    }
+  #feature__container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 
-    #aboutImgTxt1 {
-        position: relative;
-        top: -10px;
-        right: 240px;
-    }
+  #program__section {
+    display: flex;
+    flex-direction: row;
+  }
 
-    #programBtn {
-        height: 300px;
-    }
+  #aboutImgTxt1 {
+    position: relative;
+    top: -10px;
+    right: 240px;
+  }
+
+  #programBtn {
+    height: 300px;
+  }
 }
