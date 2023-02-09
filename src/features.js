@@ -54,7 +54,7 @@ const titleDiv = document.createElement("div");
 titleDiv.className = "flex flex-col items-center justify-center gap-2 ";
 const tittle = document.createElement("h2");
 tittle.innerHTML = "Fearture Artise";
-tittle.className = "text-2xl text-center mt-5";
+tittle.className = "mt-5 text-2xl text-center";
 const tittleBar = document.createElement("div");
 tittleBar.className = "h-1 w-10 bg-[#ec5242]";
 
@@ -85,6 +85,8 @@ for (let data of dataArr) {
   const profession = document.createElement("h4");
   profession.innerHTML = data.profession;
   profession.className = "text-[#ec5242] italic";
+  const divBar = document.createElement("div")
+  divBar.className = "h-1 w-12 bg-[#d3d3d3]"
   const description = document.createElement("span");
   description.innerHTML = data.description;
   description.className = "text-[13px]";
@@ -92,5 +94,6 @@ for (let data of dataArr) {
   mainDiv.appendChild(textDiv);
   textDiv.appendChild(textTittle);
   textDiv.appendChild(profession);
+  textDiv.appendChild(divBar)
   textDiv.appendChild(description);
 }

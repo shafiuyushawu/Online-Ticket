@@ -6,6 +6,9 @@
 #home {
     margin: 0 8%;
 }
+#home1 {
+    margin: 0 8%;
+}
 
 #venue {
     margin: 10px 0 10px 0;
@@ -13,6 +16,23 @@
 
 #location {
     margin-top: 5px;
+}
+
+#aboutImgTxt1 {
+    position: relative;
+    top: -130px;
+}
+
+#image1 {
+    /* background-image: url('./images/blacko.jpg'); */
+}
+
+#sponsors {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 
@@ -34,5 +54,15 @@
     #program__section {
         display: flex;
         flex-direction: row;
+    }
+
+    #aboutImgTxt1 {
+        position: relative;
+        top: -10px;
+        right: 240px;
+    }
+
+    #programBtn {
+        height: 300px;
     }
 }
