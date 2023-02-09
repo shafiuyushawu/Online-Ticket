@@ -34,16 +34,27 @@ const dataArr = [
     description:
       "Eugene Kwame Marfo, who goes by the stage name Kuami Eugene is a Ghanaian High-life and Afrobeat singer-songwriter. He is signed to Lynx Entertainment and Empire Distribution and is known for several songs, including 'Angela', 'Wish Me Well', 'Ohemaa' and many others.",
   },
+  {
+    name: "Stonebwoy",
+    img: "./images/stonebwoy_artiste.jpg",
+    profession: "Dancehall, Reggae",
+    description:
+      "Livingstone Etse Satekla, better known by his stage name Stonebwoy, is a Ghanaian Afropop, dancehall and reggae musician. He is the CEO of Burniton Music Group. He won the Best International Act: Africa category at the 2015 BET Awards and Artist of the Year at the 2015 Ghana Music Awards.",
+  },
 ];
 
-const featureSection = document.querySelector("body main #feature__section #feature__container");
-const featureTittle = document.querySelector("body main #feature__section #feature__tittle");
+const featureSection = document.querySelector(
+  "body main #feature__section #feature__container"
+);
+const featureTittle = document.querySelector(
+  "body main #feature__section #feature__tittle"
+);
 
 const titleDiv = document.createElement("div");
 titleDiv.className = "flex flex-col items-center justify-center gap-2 ";
 const tittle = document.createElement("h2");
 tittle.innerHTML = "Fearture Artise";
-tittle.className = "text-xl text-center";
+tittle.className = "text-2xl text-center mt-5";
 const tittleBar = document.createElement("div");
 tittleBar.className = "h-1 w-10 bg-[#ec5242]";
 
@@ -51,13 +62,9 @@ featureTittle.appendChild(titleDiv);
 titleDiv.appendChild(tittle);
 titleDiv.appendChild(tittleBar);
 
-
-
-
-
 for (let data of dataArr) {
   const mainDiv = document.createElement("div");
-  mainDiv.className = "flex ";
+  mainDiv.className = "flex mt-10 ";
   featureSection.appendChild(mainDiv);
 
   const profileDiv = document.createElement("div");
