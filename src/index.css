@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+.main__section {
+  background-image: url("./images/mobile\ background.png");
+  background-attachment: fixed;
+}
+
 #home {
   margin: 0 8%;
 }
@@ -33,7 +38,18 @@
   align-content: center;
 }
 
+#homeTitle {
+  background-image: url('./images/titlebackground.png');
+   background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -webkit-font-smoothing: antialiased;  
+}
+
 @media screen and (min-width: 768px) {
+  .main__section {
+    background-image: url("./images/home-bg-desk.png");
+  }
   #home {
     margin: 0 15%;
   }
