@@ -18,6 +18,18 @@
     2. `npx tailwindcss init` to create `tailwind.config.js`
     3. `npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
     4. `npm install daisyui` to install daisyui packages.
+   
+    5. Copy below and paste it in `tailwind.config.js` file in the root folder to replace the whole content.
+
+    /** @type {import('tailwindcss').Config} */
+            module.exports = {
+            content: ['./src/**/*.{html,js}'],
+            theme: {
+                extend: {},
+            },
+            plugins: [require('daisyui')],
+        };
+
 
  To get a local copy up and running follow these simple example steps.
 
