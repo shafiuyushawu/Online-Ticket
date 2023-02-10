@@ -29,11 +29,11 @@
 }
 
 #programSection {
-    padding: 0 10%;
+  padding: 0 10%;
 }
 
 #hoverProgram:hover {
-    border: 1px solid #d3d3d3;
+  border: 1px solid #d3d3d3;
 }
 
 #sponsors {
@@ -46,23 +46,19 @@
 
 #homeTitle {
   background-image: url('./images/titlebackground.png');
-   background-repeat: repeat;
+  background-repeat: repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -webkit-font-smoothing: antialiased;  
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
 }
-
-  #programSection {
-    height: 100vh;
-    overflow: hidden;
-  }
 
 @media screen and (min-width: 768px) {
   #main__section {
     background-image: url("./images/home-bg-desk.png");
     background-size: cover;
   }
-  #home {
+
+  #home1 {
     margin: 0 15%;
   }
 
@@ -88,9 +84,9 @@
   }
 
   #programBtn {
-    height: 300px;
+    height: 800px;
   }
-  
+
   #programSection {
     height: 400px;
   }
