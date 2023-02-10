@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.main__section {
+#main__section {
   background-image: url("./images/mobile\ background.png");
-  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #home {
@@ -26,8 +28,12 @@
   top: -130px;
 }
 
-#image1 {
-  /* background-image: url('./images/blacko.jpg'); */
+#programSection {
+    padding: 0 10%;
+}
+
+#hoverProgram:hover {
+    border: 1px solid #d3d3d3;
 }
 
 #sponsors {
@@ -46,9 +52,15 @@
   -webkit-font-smoothing: antialiased;  
 }
 
+  #programSection {
+    height: 100vh;
+    overflow: hidden;
+  }
+
 @media screen and (min-width: 768px) {
-  .main__section {
+  #main__section {
     background-image: url("./images/home-bg-desk.png");
+    background-size: cover;
   }
   #home {
     margin: 0 15%;
@@ -77,5 +89,9 @@
 
   #programBtn {
     height: 300px;
+  }
+  
+  #programSection {
+    height: 400px;
   }
 }
