@@ -35,7 +35,9 @@
     },
     "ignoreFiles": [
         "build/**",
-        "dist/**",
+        "docs/dist/**",
+        "/docs/dist/**",
+        "/docs/dist/output.css",
         "**/reset*.css",
         "**/bootstrap*.css",
         "**/*.js",
