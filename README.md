@@ -112,9 +112,8 @@ After you're finished please remove all the comments and instructions!
 
 
 ## 📺 Presentation <a name="presentation"></a>
-- [ScreenRec Presentation] 
 
-https://www.loom.com/share/77da53f65e794e9b974477cda147133d
+- https://www.loom.com/share/77da53f65e794e9b974477cda147133d
 
 <!-- GETTING STARTED -->
 
