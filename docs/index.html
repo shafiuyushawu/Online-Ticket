@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Ticket</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="font-[Lato]">
+  <div class="w-full bg-[#272a31] text-white hidden md:block">
+    <ul class=" mr-[13%] flex justify-end">
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]"><ion-icon name="logo-facebook"></ion-icon></a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]"><ion-icon name="logo-twitter"></ion-icon></a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">English</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">My Page</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Logout</a>
+      </li>
+    </ul>
+  </div>
+  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-around">
+    <div class="flex items-center justify-between">
+      <span class="hidden text-2xl cursor-pointer text-Center md:block">
+        <a href="./index.html">
+          <ion-icon name="mic-outline" class="text-[#ec5242] text-3xl text-center items-center"></ion-icon>
+          <span class="text-4xl">IBNSCO</span>
+        </a>
+      </span>
+      <span class="block mx-2 text-3xl cursor-pointer md:hidden">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul id="nav_ul"
+      class="text-sl md:flex md:items-center z-[1] bg-white md:bg-white md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="block mx-1 my-6 md:my-0 md:hidden">
+        <a href="./index.html">
+          <ion-icon name="mic-outline" class="text-[#ec5242] text-3xl text-center items-center"></ion-icon>
+          <span class="text-4xl">IBNSCO</span>
+        </a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="./aboutme.html" class="text-xl duration-500 hover:text-[#ec5242]">About</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Program</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Features</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Stream live</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Gallery</a>
+      </li>
+
+      <button
+        class="btn btn-outline hover:bg-[#ec5242] text-[#ec5242] border-4 hover:border-[#ec5242] duration-500 px-6 py-2 mx-1">
+        Buy Ticket
+      </button>
+      <h2 class=""></h2>
+    </ul>
+  </nav>
+  <main>
+    <section id='main__section'>
+      <div id="home" class="md:h-[720px] ">
+        <div class=" text-[#ec5242] md:flex flex-row flex-2   mb-5 md:mb-10">
+          <div class="text-start">
+            <h1 class="items-center mt-5 text-xl font-light md:text-5xl">
+              "Black Sherif"
+            </h1>
+            <span id="homeTitle" class="text-3xl font-extrabold md:text-7xl">The Genesis Edition<br />
+              Global Concert <br />
+              2023
+            </span>
+          </div>
+          <div class="">
+            <img src="./images/mic-gray.png" alt="no internet" width="100%"
+              class="top-0 items-center hidden md:block" />
+          </div>
+        </div>
+        <div class="bg-[#f2f2f2] border-2 border-[#d3d3d3] description text-[#272a31] text-xsm mb-5 md:mb-10">
+          <p>
+            Leading up to the main concert in December 2023, we bring you “ The
+            Genesis ” a thrilling experience with Ghana’s favorite poster boy
+            Black Sherif.
+          </p>
+        </div>
+        <div id="venue">
+          <span id="date" class="text-2xl font-extrabold font-\[Lato\]">2023.03.17 (FRI) ~ 19(SUN)</span>
+          <p id="location" class="text-xl">@Accra Internation Conference</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="programSection" class="mx-auto bg-[#525050]   p-5">
+      <div class="flex flex-col items-center justify-center gap-2 mb-5">
+        <h2 class="text-2xl text-center text-white">Main Program</h2>
+        <div class="h-1 bg-[#ec5242] w-10"></div>
+      </div>
+      <ul class="" id="program__section">
+        <li id="hoverProgram" class="items-center shadow-lg bg-[#252525] mx-1 mt-8 md:w-[20%]">
+          <div class="flex flex-row items-center gap-2 p-5 md:flex-col">
+            <div class="flex justify-center rounded-sm overflow-hidden items-center w-[50px] md:w-[12%]">
+              <img src="./images/rap.jpg" alt="no internet" class="" />
+            </div>
+            <p
+              class="text-[#ec5242] text-sm md:text-2xl flex justify-center items-center w-[20%] md:w-[100%] md:text-center">
+              Hipop
+            </p>
+            <p class="text-white text-[10px] w-[50%] md:w-[100%] m-0 justify-justify md:text-center md:text-[14px]">
+              Hip hop music or hip-hop music, also known as rap music and formerly known as disco rap, is a genre of
+              popular music
+            </p>
+          </div>
+        </li>
+        <li id="hoverProgram" class="items-center shadow-lg bg-[#252525] mx-1 mt-8 md:w-[20%]">
+          <div class="flex flex-row items-center gap-2 p-5 md:flex-col">
+            <div class="flex justify-center rounded-sm overflow-hidden items-center w-[50px] md:w-[11%]">
+              <img src="./images/afrobeat.jpeg" alt="no internet" class="" />
+            </div>
+            <p
+              class="text-[#ec5242] text-sm md:text-2xl flex justify-center items-center w-[20%] md:w-[100%] md:text-center">
+              Afro Beat
+            </p>
+            <p class="text-white text-[10px] w-[50%] md:w-[100%] m-0 justify-justify md:text-center md:text-[14px]">
+              Afrobeat is a Nigerian music genre that involves the combination of West African musical styles and
+              American funk, jazz
+            </p>
+          </div>
+        </li>
+        <li id="hoverProgram" class="items-center shadow-lg bg-[#252525] mx-1 mt-8 md:w-[20%]">
+          <div class="flex flex-row items-center gap-2 p-5 md:flex-col">
+            <div class="flex justify-center rounded-sm overflow-hidden items-center w-[50px] md:w-[12%]">
+              <img src="./images/Highlife-.jpg" alt="no internet" class="" />
+            </div>
+            <p
+              class="text-[#ec5242] text-sm md:text-2xl flex justify-center items-center w-[20%] md:w-[100%] md:text-center">
+              High Life
+            </p>
+            <p class="text-white text-[10px] w-[50%] md:w-[100%] m-0 justify-justify md:text-center md:text-[14px]">
+              Highlife is a music genre that started in present-day Ghana in the 19th century, during its history as a
+              colony of the
+            </p>
+          </div>
+        </li>
+        <li id="hoverProgram" class="items-center shadow-lg bg-[#252525] mx-1 mt-8 md:w-[20%]">
+          <div class="flex flex-row items-center gap-2 p-5 md:flex-col">
+            <div class="flex justify-center rounded-sm overflow-hidden items-center w-[50px] md:w-[12%]">
+              <img src="./images/reggae.jpg" alt="no internet" class="" />
+            </div>
+            <p
+              class="text-[#ec5242] text-sm md:text-2xl flex justify-center items-center w-[20%] md:w-[100%] md:text-center">
+              Reggae
+            </p>
+            <p class="text-white text-[10px] w-[50%] md:w-[100%] m-0 justify-justify md:text-center md:text-[14px]">
+              Reggae is a music genre that originated in Jamaica in the late 1960s. The term also denotes the modern
+            </p>
+          </div>
+        </li>
+        <li id="hoverProgram" class="items-center shadow-lg bg-[#252525] mx-1 mt-8 md:w-[20%]">
+          <div class="flex flex-row items-center gap-2 p-5 md:flex-col">
+            <div class="flex justify-center rounded-sm overflow-hidden items-center w-[50px] md:w-[12%]">
+              <img src="./images/rab.jfif" alt="no internet" class="" />
+            </div>
+            <p
+              class="text-[#ec5242] text-sm md:text-2xl flex justify-center items-center w-[20%] md:w-[100%] md:text-center">
+              R & B
+            </p>
+            <p class="text-white text-[10px] w-[50%] md:w-[100%] m-0 justify-justify md:text-center md:text-[14px]">
+              Rhythm and blues, frequently abbreviated as R&B or R'n'B, is a genre of popular music that originated in
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="hidden mt-8 text-center text-white underline cursor-pointer md:block">
+        <span>SEE THE WHOLE PROGRAM</span>
+      </div>
+      <div class="flex items-center justify-center block mt-10 md:hidden">
+        <button id="programBtn"
+          class="btn bg-[#ec5242] hover:text-white hover:bg-[#ec5242] font-light text-center text-sm mb-5">
+          Connect Live
+        </button>
+      </div>
+    </section>
+
+    <section class="" id="feature__section">
+      <div id="feature__tittle"></div>
+      <div id="feature__container" class=""></div>
+    </section>
+    <section class="grid grid-rows-1 gap-5 mt-20 md grid-rows-5 h-[24vh] hidden md:block bg-[#272a31]">
+      <div class="flex flex-col items-center justify-center gap-2 mt-10">
+        <h2 class="text-3xl text-center text-white">Sponsors</h2>
+        <div class="h-1 bg-[#ec5242] w-10"></div>
+      </div>
+      <div class="flex justify-center mt-10 item-center">
+        <img src="./images/gnpc.png" alt="no internet" height="5%" width="5%" class="mr-10 ">
+        <img src="./images/cosco.png" alt="no internet" height="5%" width="5%" class="mr-10">
+        <img src="./images/tv3.jpg" alt="no internet" height="5%" width="5%" class="mr-10">
+        <img src="./images//gpha.gif" alt="no internet" height="5%" width="5%" class="mr-10">
+        <img src="./images/cocobod.jpg" alt="no internet" height="5%" width="5%" class="mr-10">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="flex justify-center gap-5 items-center h-[24vh] ">
+      <span class="hidden cursor-pointer text-7xl text-Center md:block">
+        </i><ion-icon name="mic-outline" class="text-[#ec5242] text-5xl text-center items-center"></ion-icon>
+        IBNSCO
+      </span>
+      <span class="hidden text-xl md:block">
+        Ghana online tickets for programs Copyright &#169 2023 All rights
+      </span>
+    </div>
+  </footer>
+  <script src="./features.js"></script>
+  <script src="./Navbar.js"></script>
+</body>
+
+</html>

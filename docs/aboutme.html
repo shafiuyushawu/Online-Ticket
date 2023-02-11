@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+
+<body class="font-[Lato]">
+  <div class="w-full bg-[#272a31] text-white hidden md:block">
+    <ul class=" mr-[13%] flex justify-end">
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]"><ion-icon name="logo-facebook"></ion-icon></a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]"><ion-icon name="logo-twitter"></ion-icon></a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">English</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">My Page</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Logout</a>
+      </li>
+    </ul>
+  </div>
+  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-around">
+    <div class="flex items-center justify-between">
+      <span class="hidden text-2xl cursor-pointer text-Center md:block">
+        <a href="./index.html">
+          <ion-icon name="mic-outline" class="text-[#ec5242] text-3xl text-center items-center"></ion-icon>
+          <span class="text-4xl">IBNSCO</span>
+        </a>
+      </span>
+      <span class="block mx-2 text-3xl cursor-pointer md:hidden">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul id="nav_ul"
+      class="text-sl md:flex md:items-center z-[1] bg-white md:bg-white md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="block mx-1 my-6 md:my-0 md:hidden">
+        <a href="./index.html">
+          <ion-icon name="mic-outline" class="text-[#ec5242] text-3xl text-center items-center"></ion-icon>
+          <span class="text-4xl">IBNSCO</span>
+        </a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="./aboutme.html" class="text-xl duration-500 hover:text-[#ec5242]">About</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Program</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Features</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Stream live</a>
+      </li>
+      <li class="mx-1 my-6 md:my-0">
+        <a href="#" class="text-xl duration-500 hover:text-[#ec5242]">Gallery</a>
+      </li>
+
+      <button
+        class="btn btn-outline hover:bg-[#ec5242] text-[#ec5242] border-4 hover:border-[#ec5242] duration-500 px-6 py-2 mx-1">
+        Buy Ticket
+      </button>
+      <h2 class=""></h2>
+    </ul>
+  </nav>
+  <main class="items-center text-center">
+    <section id='main__section'>
+      <div id="home1" class="md:h-[80vh] ">
+        <div class="items-center ">
+          <h1 class="text-xl text-[#ec5242] font-light  md:text-2xl">"Hello! Making ticketing easy"</h1>
+          <span id="homeTitle" class=" text-[#ec5242] md:text-5xl font-extrabold text-3xl">
+            Smart way to book your ticket to events with so much convinience, 2023
+          </span>
+          <div class="bg-white border-2 border-x-white"></div>
+          <p class=" text-[#272a31] text-xsm mt-10 mb-5 md:mt-10">Mozama Disco is an
+            art
+            of LIFE for the youth of Ghana and beyond the world.
+            A combination of ARTS, FASHION, AND MUSIC from different backgrounds forming the army of Blacko Tribe.
+            Mozama Disco is also intended to inculcate a spirit of adventure, co-operation, creation of excellence in
+            the
+            domain of art and culture and feelings of fraternity, patriotism, unity and brotherhood.
+          </p>
+
+          <p class="mt-10">
+            Kindly contact us per Email for any further questions about IBNSCO Online Ticketing 2023! <br>
+            <span class="underline cursor-pointer">ibnsco@gmail.com</span>
+          </p>
+          <div class="flex flex-col items-center justify-center gap-2 mt-10 ">
+            <p class="text-xl font-bold ">Creativer Commons IBNSCO Online Ticketing</p>
+            <div class="h-1 bg-[#ec5242] w-10"></div>
+          </div>
+
+          <p>
+            The logo of IBNSCO Online Ticketing 2023 was decided through the logo competition from Janaury to Febuary
+          </p>
+        </div>
+
+        <div class="flex justify-center gap-5 items-center  text-black border-b-[#525050] ">
+          <img src="./images/logo1.jpg" alt="no internet" class="w-2/4 md:w-[32%]">
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="home1" class="flex flex-col items-center justify-center mt-20 text-center">
+      <div class="flex flex-col items-center justify-center">
+        <p class="mt-10 text-xl font-bold">IBNSCO Online Ticketing past events </p>
+        <div class="h-1 bg-[#ec5242] w-10"></div>
+      </div>
+
+      <p class="flex mt-5 text-sm">Take a look at the lat tow IBNSCO Online Tickets which took place in Accra
+        Internation Conference and Nationa Theatre</p>
+      <div class="flex flex-col items-center justify-center gap-1 mt-10 md:flex md:flex-row">
+        <img src="./images/blacko.jpg" alt="no internet" class="w-[100%] md:w-[50%] md:h-[50%] z-[-1]">
+        <p id="aboutImgTxt1" class="text-xl font-light text-white "><span
+            class="text-3xl font-extrabold md:text-5xl">2023</span><br>VGMA AWARDS
+        </p>
+
+        <img src="./images/sark.jpg" alt="no internet" class="w-[100%] md:w-[50  %] md:h-[50%] z-[-1]" />
+        <p id="aboutImgTxt1" class="text-xl font-light text-white"><span
+            class="text-3xl font-extrabold md:text-5xl">2023</span><br>BWIM CONCERT
+        </p>
+      </div>
+    </section>
+    <section class="grid grid-rows-1 gap-5 mt-20 block md:hidden  bg-[#272a31]">
+      <div class="flex flex-col items-center justify-center gap-2 ">
+        <h2 class="text-3xl text-center text-white">Sponsors</h2>
+        <div class="h-1 bg-[#ec5242] w-10"></div>
+      </div>
+      <div id="sponsors" class="mt-5 md:flex md:justify-center item-center ">
+        <img src="./images/gnpc.png" alt="no internet" height="50%" width="50%" class="mr-10 ">
+        <img src="./images/cosco.png" alt="no internet" height="10%" width="50%" class="mr-10">
+        <img src="./images/tv3.jpg" alt="no internet" height="10%" width="50%" class="mr-10">
+        <img src="./images//gpha.gif" alt="no internet" height="10%" width="50%" class="mr-10">
+        <img src="./images/cocobod.jpg" alt="no internet" height="10%" width="50%" class="mr-10">
+      </div>
+    </section>
+
+    <footer class="mt-0 md:mt-20">
+      <div
+        class="flex justify-center gap-5 items-center bg-white text-[#272a31]  md:bg-[#272a31] md:text-white h-[24vh] ">
+        <span class="text-xl cursor-pointer text-Center">
+          </i><ion-icon name="mic-outline" class="text-[#ec5242] text-2xl text-center items-center"></ion-icon>
+          IBNSCO
+        </span>
+        <span class="text-sm md:text-xl">
+          Ghana online tickets for programs <br> Copyright &#169 2023 All rights
+        </span>
+      </div>
+    </footer>
+    <script src="./features.js"></script>
+    <script src="./Navbar.js"></script>
+</body>
+
+</html>
